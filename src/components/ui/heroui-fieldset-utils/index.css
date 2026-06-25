@@ -1,0 +1,160 @@
+/* ── Fieldset shell ─────────────────────────────────────────── */
+[data-slot="fieldset"] {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+[data-slot="fieldset-legend"] {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 4px;
+  padding: 0;
+}
+
+/* description just below legend */
+[data-slot="fieldset"] > [data-slot="description"] {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+/* ── Field group ────────────────────────────────────────────── */
+[data-slot="field-group"] {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  padding-bottom: 4px;
+}
+
+/* ── Individual TextField wrapper ───────────────────────────── */
+[data-slot="base"] {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* ── Input wrapper (the visible box) ────────────────────────── */
+[data-slot="input-wrapper"] {
+  width: 100% !important;
+  min-height: unset !important;
+  height: auto !important;
+  border-radius: 10px !important;
+  background: #ffffff !important;
+  border: 1px solid #d1d5db !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+[data-slot="input-wrapper"][data-focused="true"],
+[data-slot="input-wrapper"]:focus-within {
+  border-color: var(--secondary) !important;
+  box-shadow: 0 0 0 3px rgba(13, 35, 87, 0.15) !important;
+}
+
+[data-slot="input-wrapper"][data-hovered="true"] {
+  border-color: var(--secondary) !important;
+}
+
+/* ── Input element ──────────────────────────────────────────── */
+[data-slot="input"] {
+  padding: 12px 14px !important;
+  font-size: 0.97rem !important;
+  color: var(--dark) !important;
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  width: 100% !important;
+  line-height: 1.5;
+}
+
+[data-slot="inner-wrapper"] {
+  padding: 0 !important;
+}
+
+/* ── Textarea ────────────────────────────────────────────────── */
+[data-slot="textarea-wrapper"] {
+  width: 100% !important;
+  border-radius: 10px !important;
+  background: #ffffff !important;
+  border: 1px solid #d1d5db !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+[data-slot="textarea-wrapper"]:focus-within {
+  border-color: var(--secondary) !important;
+  box-shadow: 0 0 0 3px rgba(13, 35, 87, 0.15) !important;
+}
+
+/* ── Field-level description (below a specific input) ─────────── */
+[data-slot="base"] > [data-slot="description"] {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+/* ── Error message ──────────────────────────────────────────── */
+[data-slot="error-message"],
+[data-slot="field-error"] {
+  color: #e53e3e;
+  font-size: 0.82rem;
+  margin-top: 2px;
+}
+
+/* ── Actions row ─────────────────────────────────────────────── */
+[data-slot="fieldset-actions"] {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+  align-items: center;
+}
+
+/* ── Custom buttons (native buttons styled to match site) ──────── */
+.booking-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 22px;
+  border-radius: 10px;
+  background: #0d2357;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.97rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.booking-submit-btn:hover {
+  background: #0a1b45;
+  transform: translateY(-2px);
+}
+
+.booking-reset-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 13px 18px;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.booking-reset-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-2px);
+}
