@@ -178,9 +178,12 @@ header {
 }
 
 .horizontal-booking-card {
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.68);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 40px rgba(13, 35, 87, 0.10), inset 0 1px 0 rgba(255, 255, 255, 0.6);
   border-radius: var(--radius);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.13);
   padding: 28px 32px 24px;
 }
 
@@ -215,12 +218,12 @@ header {
 .hbc-input {
   width: 100%;
   padding: 11px 14px;
-  border: 1px solid #d1d5db;
+  border: 1px solid rgba(209, 213, 219, 0.7);
   border-radius: 10px;
   outline: none;
   font-size: 0.95rem;
   color: var(--dark);
-  background: var(--white);
+  background: rgba(240, 245, 255, 0.80);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -506,11 +509,11 @@ header {
 
 /* Footer */
 footer {
-  background: transparent;
-  color: var(--dark);
+  background: var(--primary);
+  color: rgba(255, 255, 255, 0.75);
   padding: 60px 0 20px;
   margin-top: 60px;
-  border-top: 1px solid rgba(13, 35, 87, 0.10);
+  border-top: none;
 }
 
 .footer-grid {
@@ -522,27 +525,27 @@ footer {
 
 .footer-col h3,
 .footer-col h4 {
-  color: var(--primary);
+  color: #ffffff;
   margin-bottom: 14px;
 }
 
 .footer-col p,
 .footer-col a {
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.65);
   font-size: 0.96rem;
   display: block;
   margin-bottom: 10px;
 }
 
 .footer-col a:hover {
-  color: var(--primary);
+  color: #ffffff;
 }
 
 .copyright {
-  border-top: 1px solid rgba(13, 35, 87, 0.10);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   padding-top: 18px;
   text-align: center;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.45);
   font-size: 0.92rem;
 }
 

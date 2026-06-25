@@ -9,7 +9,6 @@ export default function HorizontalBookingCard() {
     const vehicle     = data.get("vehicle")?.toString()     ?? ""
     const pickup      = data.get("pickup")?.toString()      ?? ""
     const destination = data.get("destination")?.toString() ?? ""
-
     const msg = encodeURIComponent(
       `Booking Enquiry\nName: ${name}\nPhone: ${phone}\nVehicle: ${vehicle}\nPickup: ${pickup}\nDestination: ${destination}`
     )
