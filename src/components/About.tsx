@@ -1,3 +1,5 @@
+import { CheckCircle2, PhoneCall, MessageCircle, Star, CalendarCheck, MapPin } from "lucide-react"
+
 export default function About() {
   return (
     <section className="section" id="about">
@@ -11,30 +13,60 @@ export default function About() {
           </p>
           <p>
             Whether you need a luxury bus, tempo traveller, premium SUV, or corporate
-            transportation, we aim to deliver a smooth and hassle-free experience every time.
+            transportation, we deliver a smooth and hassle-free experience every time.
           </p>
           <ul className="check-list">
-            <li>✅ Trusted travel services across India</li>
-            <li>✅ Clean, comfortable, and maintained vehicles</li>
-            <li>✅ Suitable options for all group sizes</li>
-            <li>✅ Support for personal and business travel</li>
+            <li>
+              <CheckCircle2 size={18} className="check-icon" />
+              Trusted travel services across India
+            </li>
+            <li>
+              <CheckCircle2 size={18} className="check-icon" />
+              Clean, comfortable, and well-maintained vehicles
+            </li>
+            <li>
+              <CheckCircle2 size={18} className="check-icon" />
+              Flexible options for all group sizes
+            </li>
+            <li>
+              <CheckCircle2 size={18} className="check-icon" />
+              Personal, family, and corporate travel covered
+            </li>
           </ul>
         </div>
+
         <div className="about-box">
-          <h3>Booking &amp; Enquiries</h3>
-          <p><strong>Phone:</strong> <a href="tel:+918652747851">+91 8652747851</a></p>
-          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/palantine.in" target="_blank" rel="noreferrer">@palantine.in</a></p>
-          <p>
-            Please follow our Instagram page for travel updates, special offers,
-            vehicle availability, and exciting travel content.
-          </p>
-          <p>
-            Kindly save our number and share it with your family, friends, and business
-            contacts whenever travel services are required.
-          </p>
-          <a href="https://www.instagram.com/palantine.in" target="_blank" rel="noreferrer" className="btn btn-dark">Follow on Instagram</a>
+          <h3>Our Commitment to You</h3>
+          <div className="about-commitment">
+            <div className="commitment-item">
+              <Star size={18} className="commit-icon" />
+              <p>Vehicles inspected and cleaned before every trip</p>
+            </div>
+            <div className="commitment-item">
+              <PhoneCall size={18} className="commit-icon" />
+              <p>Direct driver and coordinator contact — no middleman</p>
+            </div>
+            <div className="commitment-item">
+              <CalendarCheck size={18} className="commit-icon" />
+              <p>Flexible booking — no advance payment required to enquire</p>
+            </div>
+            <div className="commitment-item">
+              <MapPin size={18} className="commit-icon" />
+              <p>Serving families, corporates, and pilgrimage groups across India</p>
+            </div>
+          </div>
+          <div className="about-contact-actions">
+            <a href="https://wa.me/918652747851" target="_blank" rel="noreferrer" className="btn btn-whatsapp">
+              <MessageCircle size={16} style={{ display: "inline", marginRight: "6px", verticalAlign: "middle" }} />
+              WhatsApp Booking
+            </a>
+            <a href="tel:+918652747851" className="btn btn-dark">
+              <PhoneCall size={16} style={{ display: "inline", marginRight: "6px", verticalAlign: "middle" }} />
+              Call Now
+            </a>
+          </div>
         </div>
       </div>
     </section>
-  );
+  )
 }

@@ -22,6 +22,7 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Contact Info</h4>
             <a href="tel:+918652747851">+91 8652747851</a>
+            <a href="mailto:Palantine.in@gmail.com">Palantine.in@gmail.com</a>
             <a href="https://www.instagram.com/palantine.in" target="_blank" rel="noreferrer">Instagram: @palantine.in</a>
             <p>Serving Pan India</p>
           </div>

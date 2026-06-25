@@ -42,16 +42,34 @@ const fleet = [
 
 function FleetCard({ img, alt, title, desc }: typeof fleet[0]) {
   return (
-    <div className="relative mx-5 h-52 w-72 shrink-0 overflow-hidden rounded-2xl shadow-lg md:h-64 md:w-88">
-      <img
-        src={img}
-        alt={alt}
-        className="h-full w-full object-cover object-center"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-      <div className="absolute bottom-0 left-0 p-4 text-white">
-        <h3 className="text-base font-semibold leading-tight">{title}</h3>
-        <p className="mt-0.5 text-xs text-white/80">{desc}</p>
+    <div
+      className="shrink-0 overflow-hidden rounded-2xl"
+      style={{ margin: '0 56px' }}
+      style={{
+        width: '280px',
+        background: '#ffffff',
+        border: '1.5px solid rgba(13,35,87,0.10)',
+        boxShadow: '0 8px 32px rgba(13,35,87,0.10), 0 1.5px 4px rgba(13,35,87,0.06)',
+      }}
+    >
+      <div className="relative overflow-hidden" style={{ height: '170px' }}>
+        <img
+          src={img}
+          alt={alt}
+          className="h-full w-full object-cover object-center transition-transform duration-500 hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+      </div>
+      <div className="p-4" style={{ borderTop: '1.5px solid rgba(13,35,87,0.07)' }}>
+        <h3
+          className="font-semibold leading-snug"
+          style={{ fontFamily: 'Rajdhani, Arial, sans-serif', fontSize: '1.05rem', color: '#0d2357' }}
+        >
+          {title}
+        </h3>
+        <p className="mt-1 text-sm leading-relaxed" style={{ color: '#4a5568' }}>
+          {desc}
+        </p>
       </div>
     </div>
   );

@@ -6,11 +6,12 @@ export default function HorizontalBookingCard() {
     const data        = new FormData(e.currentTarget)
     const name        = data.get("name")?.toString()        ?? ""
     const phone       = data.get("phone")?.toString()       ?? ""
+    const date        = data.get("date")?.toString()        ?? ""
     const vehicle     = data.get("vehicle")?.toString()     ?? ""
     const pickup      = data.get("pickup")?.toString()      ?? ""
     const destination = data.get("destination")?.toString() ?? ""
     const msg = encodeURIComponent(
-      `Booking Enquiry\nName: ${name}\nPhone: ${phone}\nVehicle: ${vehicle}\nPickup: ${pickup}\nDestination: ${destination}`
+      `Booking Enquiry\nName: ${name}\nPhone: ${phone}\nTravel Date: ${date}\nVehicle: ${vehicle}\nPickup: ${pickup}\nDestination: ${destination}`
     )
     window.open(`https://wa.me/918652747851?text=${msg}`, "_blank")
   }
@@ -22,16 +23,20 @@ export default function HorizontalBookingCard() {
           <p className="hbc-label">Quick Booking Enquiry</p>
           <form className="hbc-form" onSubmit={onSubmit}>
             <div className="hbc-field">
-              <label className="hbc-field-label">Full Name</label>
-              <input name="name" type="text" placeholder="John Doe" className="hbc-input" required />
+              <label className="hbc-field-label" htmlFor="hbc-name">Full Name</label>
+              <input id="hbc-name" name="name" type="text" placeholder="Your name" className="hbc-input" required />
             </div>
             <div className="hbc-field">
-              <label className="hbc-field-label">Mobile Number</label>
-              <input name="phone" type="tel" placeholder="+91 98765 43210" className="hbc-input" required />
+              <label className="hbc-field-label" htmlFor="hbc-phone">Mobile Number</label>
+              <input id="hbc-phone" name="phone" type="tel" placeholder="+91 98765 43210" className="hbc-input" required />
             </div>
             <div className="hbc-field">
-              <label className="hbc-field-label">Vehicle Type</label>
-              <select name="vehicle" className="hbc-input">
+              <label className="hbc-field-label" htmlFor="hbc-date">Travel Date</label>
+              <input id="hbc-date" name="date" type="date" className="hbc-input" required />
+            </div>
+            <div className="hbc-field">
+              <label className="hbc-field-label" htmlFor="hbc-vehicle">Vehicle Type</label>
+              <select id="hbc-vehicle" name="vehicle" className="hbc-input">
                 <option value="">Select vehicle</option>
                 <option>Luxury Bus</option>
                 <option>Tempo Traveller</option>
@@ -41,16 +46,16 @@ export default function HorizontalBookingCard() {
               </select>
             </div>
             <div className="hbc-field">
-              <label className="hbc-field-label">Pickup Location</label>
-              <input name="pickup" type="text" placeholder="City or Area" className="hbc-input" required />
+              <label className="hbc-field-label" htmlFor="hbc-pickup">Pickup Location</label>
+              <input id="hbc-pickup" name="pickup" type="text" placeholder="City or area" className="hbc-input" required />
             </div>
             <div className="hbc-field">
-              <label className="hbc-field-label">Destination</label>
-              <input name="destination" type="text" placeholder="City or Area" className="hbc-input" required />
+              <label className="hbc-field-label" htmlFor="hbc-dest">Destination</label>
+              <input id="hbc-dest" name="destination" type="text" placeholder="City or area" className="hbc-input" required />
             </div>
             <button type="submit" className="hbc-submit">
               <MessageCircle size={16} />
-              Enquire
+              Get Quote
             </button>
           </form>
         </div>
