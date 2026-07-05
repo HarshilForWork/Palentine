@@ -48,7 +48,7 @@ export default function About() {
             </div>
             <div className="commitment-item">
               <CalendarCheck size={18} className="commit-icon" />
-              <p>Flexible booking — no advance payment required to enquire</p>
+              <p>Punctual pickups and drop-offs on every trip</p>
             </div>
             <div className="commitment-item">
               <MapPin size={18} className="commit-icon" />
