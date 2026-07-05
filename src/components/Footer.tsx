@@ -1,3 +1,11 @@
+import { scrollToSection } from '../utils/scrollToSection';
+
+function handleNavClick(e: React.MouseEvent<HTMLAnchorElement>, id: string) {
+  if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  e.preventDefault();
+  scrollToSection(id);
+}
+
 export default function Footer() {
   return (
     <footer>
@@ -14,11 +22,11 @@ export default function Footer() {
           </div>
           <div className="footer-col">
             <h4>Quick Links</h4>
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#fleet">Our Fleet</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" onClick={(e) => handleNavClick(e, 'home')}>Home</a>
+            <a href="#services" onClick={(e) => handleNavClick(e, 'services')}>Services</a>
+            <a href="#fleet" onClick={(e) => handleNavClick(e, 'fleet')}>Our Fleet</a>
+            <a href="#about" onClick={(e) => handleNavClick(e, 'about')}>About</a>
+            <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')}>Contact</a>
           </div>
           <div className="footer-col">
             <h4>Contact Info</h4>
