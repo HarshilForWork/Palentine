@@ -6,12 +6,6 @@ const fleet = [
     desc: 'Compact and comfortable for city travel, airport drops, and solo or couple trips.',
   },
   {
-    img: '/6_seater.jpeg',
-    alt: '6 Seater SUV',
-    title: '6 Seater SUV',
-    desc: 'Spacious ride for small families, executive travel, and outstation comfort.',
-  },
-  {
     img: '/9_seater.jpeg',
     alt: '9 Seater Traveller',
     title: '9 Seater Traveller',

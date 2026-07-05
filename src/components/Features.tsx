@@ -1,7 +1,7 @@
 import { Shield, UserCheck, Clock, Wallet, Globe } from "lucide-react"
 
 const stats = [
-  { num: "6+", label: "Vehicle Types Available" },
+  { num: "10+", label: "Vehicle Types Available" },
   { num: "24×7", label: "WhatsApp & Call Support" },
   { num: "Pan-India", label: "Route Coverage" },
 ]

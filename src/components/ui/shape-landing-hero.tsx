@@ -45,7 +45,7 @@ export function HeroGeometric({
               marginBottom: "20px",
             }}
           >
-            Pan-India Transport Service
+            Pan-India Travel Service
           </motion.p>
 
           {/* Headline */}

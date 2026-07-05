@@ -19,7 +19,12 @@ export default function CTA() {
               <Phone size={18} style={{ display: "inline", marginRight: "8px", verticalAlign: "middle" }} />
               +91 8652747851
             </a>
-            <a href="mailto:Palantine.in@gmail.com" className="btn btn-cta-secondary">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=Palantine.in@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-cta-secondary"
+            >
               <Mail size={18} style={{ display: "inline", marginRight: "8px", verticalAlign: "middle" }} />
               Email Us
             </a>
