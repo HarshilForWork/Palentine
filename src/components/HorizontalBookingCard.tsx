@@ -38,11 +38,13 @@ export default function HorizontalBookingCard() {
               <label className="hbc-field-label" htmlFor="hbc-vehicle">Vehicle Type</label>
               <select id="hbc-vehicle" name="vehicle" className="hbc-input">
                 <option value="">Select vehicle</option>
-                <option>Luxury Bus</option>
-                <option>Tempo Traveller</option>
-                <option>Car / SUV</option>
-                <option>Corporate Travel</option>
-                <option>Family / Group Tour</option>
+                <option>4 Seater Sedan</option>
+                <option>6 Seater SUV</option>
+                <option>9 Seater Traveller</option>
+                <option>12 Seater Traveller</option>
+                <option>17 Seater Traveller</option>
+                <option>26 Seater Mini Bus</option>
+                <option>35 Seater Luxury Bus</option>
               </select>
             </div>
             <div className="hbc-field">

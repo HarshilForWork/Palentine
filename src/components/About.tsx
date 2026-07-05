@@ -1,4 +1,4 @@
-import { CheckCircle2, PhoneCall, MessageCircle, Star, CalendarCheck, MapPin } from "lucide-react"
+import { CheckCircle2, PhoneCall, Star, CalendarCheck, MapPin, UserCheck } from "lucide-react"
 
 export default function About() {
   return (
@@ -54,16 +54,10 @@ export default function About() {
               <MapPin size={18} className="commit-icon" />
               <p>Serving families, corporates, and pilgrimage groups across India</p>
             </div>
-          </div>
-          <div className="about-contact-actions">
-            <a href="https://wa.me/918652747851" target="_blank" rel="noreferrer" className="btn btn-whatsapp">
-              <MessageCircle size={16} style={{ display: "inline", marginRight: "6px", verticalAlign: "middle" }} />
-              WhatsApp Booking
-            </a>
-            <a href="tel:+918652747851" className="btn btn-dark">
-              <PhoneCall size={16} style={{ display: "inline", marginRight: "6px", verticalAlign: "middle" }} />
-              Call Now
-            </a>
+            <div className="commitment-item">
+              <UserCheck size={18} className="commit-icon" />
+              <p>Experienced, background-verified drivers on every trip</p>
+            </div>
           </div>
         </div>
       </div>

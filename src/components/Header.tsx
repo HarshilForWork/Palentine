@@ -2,7 +2,9 @@ export default function Header() {
   return (
     <header>
       <div className="container navbar">
-        <div className="logo">PALANTINE <span>TRAVELS</span></div>
+        <a href="#home" className="logo">
+          <img src="/Logo.jpeg" alt="Palantine Travels" />
+        </a>
         <nav className="nav-links">
           <a href="#home">Home</a>
           <a href="#services">Services</a>
