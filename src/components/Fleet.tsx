@@ -1,9 +1,9 @@
 const fleet = [
   {
-    img: '/4_seater.jpeg',
-    alt: '4 Seater Sedan',
-    title: '4 Seater Sedan',
-    desc: 'Compact and comfortable for city travel, airport drops, and solo or couple trips.',
+    img: '/6_seater.jpeg',
+    alt: '6 Seater Car',
+    title: '6 Seater Car',
+    desc: 'Spacious ride for small families, executive travel, and outstation comfort.',
   },
   {
     img: '/9_seater.jpeg',

@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <HeroGeometric
       badge="Palantine Travels"
-      title1="Your Travel Partner"
+      title1="Your Real Travel Pal"
       title2="Across India"
     />
   )

@@ -8,7 +8,7 @@ interface HeroGeometricProps {
 }
 
 export function HeroGeometric({
-  title1 = "Your Trusted Travel Partner",
+  title1 = "Your Real Travel Pal",
   title2 = "Across India",
 }: HeroGeometricProps) {
   const shouldReduceMotion = useReducedMotion()

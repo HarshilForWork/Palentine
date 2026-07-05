@@ -10,6 +10,7 @@ export default function Footer() {
               We provide trusted and comfortable travel services across India for
               family trips, group tours, corporate bookings, outstation journeys, and more.
             </p>
+            <p>Serving Pan India</p>
           </div>
           <div className="footer-col">
             <h4>Quick Links</h4>
@@ -24,7 +25,6 @@ export default function Footer() {
             <a href="tel:+918652747851">+91 8652747851</a>
             <a href="mailto:Palantine.in@gmail.com">Palantine.in@gmail.com</a>
             <a href="https://www.instagram.com/palantine.in" target="_blank" rel="noreferrer">Instagram: @palantine.in</a>
-            <p>Serving Pan India</p>
           </div>
         </div>
         <div className="copyright">
