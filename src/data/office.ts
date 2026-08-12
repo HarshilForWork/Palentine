@@ -5,9 +5,9 @@
 
 /** Display lines, formatted for reading. */
 export const officeAddressLines = [
-  '67–68, Bhawani Complex, 68-A',
-  'Vashi Road, near APMC Market',
-  'Phase 2, Sector 19A, Vashi',
+  '101, Bhawani Complex, 67–68, 68-A',
+  'Phase 2, Sector 19A, Vashi Road',
+  'Near APMC Market, Vashi',
   'Navi Mumbai, Maharashtra 400703',
 ] as const;
 

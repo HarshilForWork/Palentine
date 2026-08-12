@@ -28,7 +28,7 @@ export default function Footer() {
             <a href="#services" onClick={(e) => handleNavClick(e, 'services')}>Services</a>
             <a href="#fleet" onClick={(e) => handleNavClick(e, 'fleet')}>Our Fleet</a>
             <a href="#about" onClick={(e) => handleNavClick(e, 'about')}>About</a>
-            <a href="#location" onClick={(e) => handleNavClick(e, 'location')}>Visit Us</a>
+            <a href="#location" onClick={(e) => handleNavClick(e, 'location')}>Our Office</a>
             <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')}>Contact</a>
           </div>
           <div className="footer-col">

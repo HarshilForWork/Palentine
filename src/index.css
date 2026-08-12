@@ -732,6 +732,14 @@ footer {
   }
 }
 
+/* Narrow tablets: tighten the nav so all six links plus Call Now stay on one
+   row, instead of Call Now wrapping alone just above the 768px stack point. */
+@media (min-width: 769px) and (max-width: 860px) {
+  .nav-links {
+    gap: 16px;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
